@@ -13,6 +13,8 @@ mongoose.connect("mongodb+srv://gunwaladitya:Qazzaq%40001@29102025.d13dhap.mongo
 app.get("/",(req,res)=>{
     res.send("Halo! Welcome To Home")
 })
+
+console.log("some changes to put before committing something in github");
 app.use("/user", userRouter)
 app.use("/product", productRouter)
 app.use("/cart", cartRouter)
